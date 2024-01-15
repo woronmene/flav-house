@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Avenir", sans-serif;
+  scroll-behavior: smooth;
+}
+nav {
+  z-index: 100;
+}
+
+li {
+  list-style: none;
+}
+
+.tracking-3 {
+  letter-spacing: 3px;
+}
+.tracking-5 {
+  letter-spacing: 5px;
+}
+
+.belinda-font {
+  font-family: "Belinda", sans-serif;
+}
