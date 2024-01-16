@@ -33,10 +33,13 @@ function ContactUs() {
   };
 
   return (
-    <div className="w-full px-10 lg:px-20 py-10 text-[#E3583D] tracking-3">
+    <div
+      id="contact"
+      className="w-full px-10 lg:px-20 py-10 text-[#E3583D] tracking-3"
+    >
       <div className="flex flex-col lg:flex-row items-center gap-10">
-        <div className=" flex flex-col gap-5 w-full lg:w-1/2 ">
-          <p className="text-3xl lg:text-[70px] font-bold">Contact Us</p>
+        <div className=" h-[500px]  flex flex-col  gap-5 w-full lg:w-1/2 ">
+          <p className="text-3xl lg:text-[70px] font-bold mb-20">Contact Us</p>
           <p className="text-md lg:text-2xl belinda-font">
             The ideal fusion of tranquility and relishing scrumptious eats.
           </p>

@@ -1,29 +1,29 @@
 import React, { useState } from "react";
 
 function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   function toggleMobileMenu() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   }
   return (
-    <nav class="fixed w-full">
-      <div class="w-full relative  bg-white">
-        <div class="w-full px-5 md:px-10 flex items-center gap-[50px] lg:gap-[100px] xl:gap-[200px] py-1 ">
-          <div class="w-[140px] flex-0 cursor-pointer">
-            <img class="w-full" src="/flavorLogo.svg" alt="" />
+    <nav className="fixed w-full">
+      <div className="w-full relative  bg-white">
+        <div className="w-full px-5 md:px-10 flex items-center gap-[50px] lg:gap-[100px] xl:gap-[200px] py-1 ">
+          <div className="w-[140px] flex-0 cursor-pointer">
+            <img className="w-full" src="/flavorLogo.svg" alt="" />
           </div>
 
-          <div class="flex-1 hidden lg:block py-2 ">
-            <div class="flex lg:w-2/3 xl:w-1/2 gap-20 text-xs tracking-3">
-              <li class="duration-200 hover:-translate-y-1 whitespace-nowrap hover:text-[#FF6244]">
+          <div className="flex-1 hidden lg:block py-2 ">
+            <div className="flex lg:w-2/3 xl:w-1/2 gap-20 text-xs tracking-3">
+              <li className="duration-200 hover:-translate-y-1 whitespace-nowrap hover:text-[#FF6244]">
                 <a href="#hero">Home</a>
               </li>
-              <li class="duration-200 hover:-translate-y-1 whitespace-nowrap  hover:text-[#FF6244]">
+              <li className="duration-200 hover:-translate-y-1 whitespace-nowrap  hover:text-[#FF6244]">
                 <a href="#menu">Our Menu</a>
               </li>
-              <li class="duration-200 hover:-translate-y-1 whitespace-nowrap hover:text-[#FF6244]">
-                <a href="#hero">Contact Us</a>
+              <li className="duration-200 hover:-translate-y-1 whitespace-nowrap hover:text-[#FF6244]">
+                <a href="#contact">Contact Us</a>
               </li>
             </div>
           </div>
@@ -36,20 +36,20 @@ function Navbar() {
           </a>
 
           <button
-            class="lg:hidden absolute top-[50%] -translate-y-[50%] right-[10px] cursor-pointer"
+            className="lg:hidden absolute top-[50%] -translate-y-[50%] right-[10px] cursor-pointer"
             onClick={toggleMobileMenu}
           >
             <svg
-              class="w-6 h-6"
+              className="w-6 h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
               ></path>
             </svg>
@@ -57,28 +57,28 @@ function Navbar() {
         </div>
 
         <div
-          class={`lg:hidden ${
+          className={`lg:hidden ${
             isMobileMenuOpen ? "right-0" : "right-[-100%]"
           } fixed top-0  h-full w-full md:w-1/2 bg-white transition-all ease-in-out duration-300 z-50`}
         >
-          <div class="p-4 mt-20 ">
+          <div className="p-4 mt-20 ">
             <a
               href="#hero"
-              class="block py-2 hover:text-[#FF6244] cursor-pointer"
+              className="block py-2 hover:text-[#FF6244] cursor-pointer"
               onClick={toggleMobileMenu}
             >
               Home
             </a>
             <a
               href="#hero"
-              class="block py-2 hover:text-[#FF6244] cursor-pointer"
+              className="block py-2 hover:text-[#FF6244] cursor-pointer"
               onClick={toggleMobileMenu}
             >
               Our Menu
             </a>
             <a
               href="#hero"
-              class="block py-2 hover:text-[#FF6244] cursor-pointer"
+              className="block py-2 hover:text-[#FF6244] cursor-pointer"
               onClick={toggleMobileMenu}
             >
               Contact Us
@@ -89,27 +89,27 @@ function Navbar() {
           </div>
 
           <button
-            class="absolute top-3 right-3 cursor-pointer"
+            className="absolute top-3 right-3 cursor-pointer"
             onClick={toggleMobileMenu}
           >
             <svg
-              class="w-6 h-6"
+              className="w-6 h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               ></path>
             </svg>
           </button>
         </div>
       </div>
-      <div class="w-full py-4 bg-[#FF6244]"></div>
+      <div className="w-full py-4 bg-[#FF6244]"></div>
     </nav>
   );
 }
